@@ -1,0 +1,34 @@
+{
+  "name": "sensitive-words-rikesh",
+  "version": "1.0.0",
+  "description": "first package to mask the sensitive words in content ",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikLakhe/sensitive-words-rikesh.git"
+  },
+  "keywords": [
+    "filter",
+    "package",
+    "filtering"
+  ],
+  "author": "Rikesh Lal Shrestha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RikLakhe/sensitive-words-rikesh/issues"
+  },
+  "homepage": "https://github.com/RikLakhe/sensitive-words-rikesh#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^24.9.0",
+    "watch": "^1.0.2"
+  }
+}
