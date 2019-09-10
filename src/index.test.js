@@ -1,15 +1,15 @@
 import sensitiveWords from '.'
 
-test('replaces the sensitive string into ****', () => (
+test('replaces blacklisted words with asterisks', () => (
     expect(sensitiveWords(
-        'The name of the NX will be nitendo switch',
+        'The name of the NX will be the Nintendo Switch',
         ['switch']
-    )).toBe('The name of the NX will be nitendo ****')
+    )).toBe('The name of the NX will be the Nintendo ****')
 ))
 
-test('replaces the multiple sensitive string into ***', () => (
+test('replaces multiple instances of blacklisted words', () => (
     expect(sensitiveWords(
-        'The name of the NX will be nitendo switch, switch is great. switch it up.',
+        'The name of the NX will be the Nintendo Switch. The switch will be awesome!',
         ['switch']
-    )).toBe('The name of the NX will be nitendo ****, **** is great. **** it up.')
+    )).toBe('The name of the NX will be the Nintendo ****. The **** will be awesome!')
 ))
