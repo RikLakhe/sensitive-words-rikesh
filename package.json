@@ -11,6 +11,11 @@
     "prepublish": "npm run build",
     "release": "np"
   },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RikLakhe/sensitive-words-rikesh.git"
