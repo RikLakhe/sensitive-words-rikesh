@@ -13,7 +13,7 @@
   },
   "babel": {
     "presets": [
-      "latest"
+      "@babel/preset-env"
     ]
   },
   "repository": {
@@ -32,6 +32,9 @@
   },
   "homepage": "https://github.com/RikLakhe/sensitive-words-rikesh#readme",
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "jest": "^24.9.0",
