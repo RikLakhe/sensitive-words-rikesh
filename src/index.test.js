@@ -1,4 +1,4 @@
-import {sensitiveWords} from './index'
+import { sensitiveWords } from './index'
 
 test('replaces the sensitive string into ***',()=>(
     expect(sensitiveWords(
